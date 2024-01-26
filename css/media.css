@@ -2,15 +2,68 @@
 	.container{
 		max-width: 960px;
 	}
+	.main_tit{
+		align-items: center;
+	}
+	body{
+		font-size: 16px;
+	}
+	.head_logo img{
+		max-width: 60px;
+		max-height: 60px;
+	}
+	.menu li a{
+		font-size: 14px;
+	}
+	.main_btn{
+		font-size: 10px;
+		max-height: 45px;
+		max-width: 130px;
+	}
+	.costumer_name{
+		font-size: 20px;
+
+	}
+	.costumer_card{
+		max-width: 300px;
+	}
+	.costumer_review{
+		font-size: 14px;
+	}
+	.costumer_status{
+		font-size: 12px;
+	}
+	.plus_left img{
+		max-width: 430px;
+		justify-content: center;
+		align-items: center;
+	}
+	.plus_right{
+		max-width: 400px;
+		justify-content: center;
+	}
+	.plus_tit{
+		margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 990px) {
 	.container{
 		max-width: 750px;
 	}
+	.costumer_card{
+		max-width: 230px;
+	}
 }
 @media screen and (max-width: 780px) {
 	.container{
 		max-width: 510px;
+	}
+	.costumer_cards{
+		justify-content: center;
+	}
+	.costumer_card{
+		max-width: 350px;
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 540px) {
