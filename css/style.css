@@ -288,7 +288,7 @@ header {
     font-size: 25px;
     font-weight: 400;
     padding-bottom: 12px;
-    font-family: 'Ping';;
+    font-family: 'Ping';
 }
 .plus_wrap{
 	align-items: center;
@@ -380,7 +380,8 @@ header {
 }
 
 .sec_tit {
-	margin-bottom: 20PX;
+	padding-top: 80px;
+	margin-bottom: 20px;
 }
 
 .acor-container {
@@ -612,4 +613,7 @@ header::before {
 #myBtn:hover {
     background: #ddd;
     color: black;
+}
+.section_btn{
+	justify-content: center;
 }
