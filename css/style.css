@@ -234,6 +234,7 @@ header {
 	overflow: hidden;
 	text-align: center;
 	font-size: 30px;
+	padding-bottom: 30px;
 }
 
 .plus_tit h2 {
@@ -618,7 +619,14 @@ header::before {
 	justify-content: center;
 }
 /* //advan// */
+.advan_cards{
 
+	padding-top: 50px;
+
+}
+.advan{
+	padding: 0;
+}
 .advan_card {
 	background: #fff;
 	padding: 20px;
