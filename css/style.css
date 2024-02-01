@@ -171,6 +171,30 @@ header {
 	max-width: 150px;
 	max-height: 100px;
 }
+a {
+	position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #000000; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
 /* menu  */
 
 .main_tit {
@@ -292,7 +316,7 @@ header {
 
 .plus_left {
 	max-width: 50%;
-	width: 70%;
+	max-width: 70%;
 	height: 70%;
 }
 
@@ -526,7 +550,7 @@ background: #ffc343;
 }
 
 .advan_ic {
-	width: 100px;
+	max-width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	display: block;
@@ -537,5 +561,5 @@ background: #ffc343;
 
 .advan_text {
 	text-align: center;
-	width: 180px;
+	max-width: 180px;
 }
