@@ -171,7 +171,7 @@ header {
 	max-width: 150px;
 	max-height: 100px;
 }
-a {
+li a {
 	position: relative;
 	color: #00a650; /*задаём цвет ссылки*/
 	cursor: pointer;
@@ -179,7 +179,7 @@ a {
 	text-decoration: none; /*убираем подчёркивание*/
 
 }
-a:after {
+li a:after {
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
@@ -190,8 +190,8 @@ a:after {
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 
-a:hover:after,
-a:focus:after {
+li a:hover:after,
+li a:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
@@ -245,6 +245,36 @@ a:focus:after {
 
 .main_img img {
 	max-width: 500px;
+}
+.animation-truck-car {
+    animation: animationCar linear 2s;
+    -webkit-animation: animationCar linear 2s;
+    -moz-animation: animationCar linear 2s;
+    -o-animation: animationCar linear 2s;
+    -ms-animation: animationCar linear 2s;
+	/* animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+    -moz-animation-iteration-count2 2;
+    -o-animation-iteration-count: 2;
+    -ms-animation-iteration-count:2; */
+}
+
+@keyframes animationCar {
+  0% {
+    transform: translate(-120px, 0);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.index-about__truck {
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    z-index: 2;
 }
 /* plus  */
 .plus_tit {
