@@ -156,6 +156,7 @@ section {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
 /* header */
 header {
 	background: #f1c513;
@@ -171,35 +172,51 @@ header {
 	max-width: 150px;
 	max-height: 100px;
 }
+
 li a {
 	position: relative;
-	color: #00a650; /*задаём цвет ссылки*/
+	color: #00a650;
+	/*задаём цвет ссылки*/
 	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
+	line-height: 1;
+	/*задаём высоту строки*/
+	text-decoration: none;
+	/*убираем подчёркивание*/
 
 }
+
 li a:after {
 	display: block;
 	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #000000; /*задаём цвет линии*/
+	left: 0;
+	/*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;
+	/*задаём длинну линии до наведения курсора*/
+	height: 2px;
+	/*задаём ширину линии*/
+	background-color: #000000;
+	/*задаём цвет линии*/
 	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+	transition: width 0.3s ease-out;
+	/*задаём время анимации*/
 }
 
 li a:hover:after,
 li a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 100%;
+	/*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-/* menu  */
+/* main  */
+.sec_tit {
+	/* padding: 80px 0 15px 0px; */
+	font-weight: 700;
+}
 
 .main_tit {
+	padding: 80px 0 15px 0;
 	color: #343c4e;
-	font-size: 54px;
+	font-size: 45px;
 	font-family: 'Ping', Arial, sans-serif;
 	line-height: 1.2;
 	font-weight: 700;
@@ -208,6 +225,11 @@ li a:focus:after {
 	border-style: solid;
 	text-align: center;
 	align-items: center;
+}
+
+.main_txt {
+	text-align: center;
+	padding-bottom: 15px;
 }
 
 .menu a {
@@ -246,12 +268,13 @@ li a:focus:after {
 .main_img img {
 	max-width: 500px;
 }
+
 .animation-truck-car {
-    animation: animationCar linear 2s;
-    -webkit-animation: animationCar linear 2s;
-    -moz-animation: animationCar linear 2s;
-    -o-animation: animationCar linear 2s;
-    -ms-animation: animationCar linear 2s;
+	animation: animationCar linear 2s;
+	-webkit-animation: animationCar linear 2s;
+	-moz-animation: animationCar linear 2s;
+	-o-animation: animationCar linear 2s;
+	-ms-animation: animationCar linear 2s;
 	/* animation-iteration-count: 2;
     -webkit-animation-iteration-count: 2;
     -moz-animation-iteration-count2 2;
@@ -260,22 +283,26 @@ li a:focus:after {
 }
 
 @keyframes animationCar {
-  0% {
-    transform: translate(-120px, 0);
-  }
-  50% {
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+	0% {
+		transform: translate(-120px, 0);
+	}
+
+	50% {
+		transform: translate(-10px, 0px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
 }
+
 .index-about__truck {
-    left: 0;
-    right: 50%;
-    bottom: 0;
-    z-index: 2;
+	left: 0;
+	right: 50%;
+	bottom: 0;
+	z-index: 2;
 }
+
 /* plus  */
 .plus_tit {
 	overflow: hidden;
@@ -309,6 +336,7 @@ li a:focus:after {
 	margin-right: -100%;
 	right: -14px;
 }
+
 .plus_card_txt {
 	background: #fdc10b;
 	width: 100%;
@@ -366,6 +394,7 @@ li a:focus:after {
 .plus_card_port:hover {
 	transform: scale(1.1);
 }
+
 /* costumer  */
 .costumers {
 	background: #f9f9f7;
@@ -430,10 +459,7 @@ li a:focus:after {
 	line-height: 24px;
 }
 
-.sec_tit {
-	padding-top: 80px;
-	margin-bottom: 20px;
-}
+
 /* acordion */
 .acor-container {
 	margin: 20px 0;
@@ -472,7 +498,7 @@ li a:focus:after {
 	font-family: Verdana, sans-serif;
 	font-size: 18px;
 	margin: 0 0 5px;
-	transition:  500ms;
+	transition: 500ms;
 }
 
 .acor-container label:hover {
@@ -493,9 +519,10 @@ li a:focus:after {
 	color: #000000;
 	/* box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3); */
 }
-.acor-container input:checked+label:hover{
-	
-background: #ffc343;
+
+.acor-container input:checked+label:hover {
+
+	background: #ffc343;
 }
 
 .acor-container input:checked+label:before {
@@ -509,11 +536,13 @@ background: #ffc343;
 	color: #000;
 	padding: 20px 30px 10px;
 }
+
 .acor_txt {
 	color: #757575;
 	margin-bottom: 10px;
 	font-style: 12px;
 }
+
 .content {
 	position: fixed;
 	bottom: 0;
@@ -522,6 +551,7 @@ background: #ffc343;
 	width: 100%;
 	padding: 20px;
 }
+
 .section_btn {
 	justify-content: center;
 }
@@ -529,10 +559,6 @@ background: #ffc343;
 /* //advan// */
 .advan_cards {
 	padding-top: 50px;
-}
-
-.advan {
-	padding: 0;
 }
 
 .advan_card {
@@ -592,4 +618,35 @@ background: #ffc343;
 .advan_text {
 	text-align: center;
 	max-width: 180px;
+}
+
+/* services */
+.services_card {
+	max-width: 415px;
+	
+}
+
+.ser_img {
+	position: relative;
+	
+}
+.image-filter{
+	opacity: 0;
+}
+.ser_img:hover .image-filter{
+	height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+	background-color: #000000;
+    opacity: 0.3;
+	/* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+}
+
+
+.ser_txt {
+	text-align: center;	
+	padding: 15px 0;
+
 }
