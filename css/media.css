@@ -55,6 +55,7 @@
 	.wrap{
 		justify-content: center;
 	}
+
 }
 @media screen and (max-width: 990px) {
 	.container{
@@ -63,14 +64,14 @@
 	.costumer_card{
 		max-width: 230px;
 	}
-	
+
 }
 @media screen and (max-width: 780px) {
 	.container{
 		max-width: 510px;
 	}
 	body{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.main_tit{
 		font-size: 35px;

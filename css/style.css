@@ -190,7 +190,7 @@ section {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: #000000;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -226,6 +226,11 @@ section {
   .menu-button-container {
     display: flex;
   }
+  .header_btn{
+	display: none;
+  }
+
+  
   .menu {
     position: absolute;
     top: 0;
@@ -247,6 +252,7 @@ section {
     border: 1px solid #f1c513;
     height: 2.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	
   }
   .menu > li {
     display: flex;
@@ -261,8 +267,8 @@ section {
     border-bottom: 1px solid #f1c513;
   }
 
-  .menu li a {
-	color: white;
+.menu li a {
+	color: #f1c513;
   }
 }
 
@@ -281,10 +287,12 @@ header {
 	max-width: 150px;
 	max-height: 100px;
 }
-
-li a {
+.top-nav{
+	
+}
+.menu li a {
 	position: relative;
-	color: #00a650;
+	color: #000;
 	/*задаём цвет ссылки*/
 	cursor: pointer;
 	line-height: 1;
@@ -408,7 +416,7 @@ li a:focus:after {
 	left: 0;
 	right: 50%;
 	bottom: 0;
-	z-index: 2;
+	/* z-index: 2; */
 }
 
 /* plus  */
@@ -791,7 +799,7 @@ li a:focus:after {
 /* footer */
 footer {
 	background: #3b3b3b;
-	height: 360px;
+	/* height: 360px; */
 }
 
 .footer_tit {
@@ -807,8 +815,8 @@ footer {
 }
 
 .footer_logo img {
-	max-width: 250px;
-	max-height: 200px;
+	max-width: 125px;
+	max-height: 125px;
 	
 }
 
@@ -843,36 +851,3 @@ background: url(/img/icons/footer_tg.png);
 .footer_ic :nth-child(3) {
 	background: url(./img/icons/footer_sms.png);
 }
-.animation-truck-car_logo {
-	animation: animationCarLogo linear 8s;
-	-webkit-animation: animationCarLogo linear 8s;
-	-moz-animation: animationCarLogo linear 8s;
-	-o-animation: animationCarLogo linear 8s;
-	-ms-animation:animationCarLogo linear 8s;
-	/* animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count infinite;
-    -o-animation-iteration-count: infinite;
-    -ms-animation-iteration-count:infinite;
-}
-*/
- @keyframes animationCarLogo {
-	0% {
-		transform: translate(-120px, 0);
-	}
-
-	50% {
-		transform: translate(40%, 0px);
-	}
-
-	100% {
-		transform: translate(40%, 0);
-	}
-}
-
-.index-about__truck_logo {
-	left: 0;
-	right: 50%;
-	bottom: 0;
-	z-index: 2;
-} 
