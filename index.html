@@ -23,29 +23,32 @@
 
 <body>
 	<header>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<div class="container">
-			<div class="head flex">
+			<div class="head flex top-nav">
 				<a href="index.html" class="head_logo index-about__truck animation-truck-car">
 					<img src="img/icons/logo.svg" alt="">
 				</a>
-				<nav>
-					<ul class="menu flex">
-						<li><a href="">Главная</a></li>
-						<li><a href="#information">О нас</a></li>
-						<li><a href="#costumers">Наши клиенты</a></li>
-						<li><a href="#services">Услуги</a></li>
+				<input id="menu-toggle" type="checkbox" />
+				<label class='menu-button-container' for="menu-toggle">
+					<div class='menu-button'></div>
+				</label>
+				<ul class="menu flex">
+					<li><a href="">Главная</a></li>
+					<li><a href="#information">О нас</a></li>
+					<li><a href="#costumers">Наши клиенты</a></li>
+					<li><a href="#services">Услуги</a></li>
 
-						<li><a href="#questions">Вопросы</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>
+					<li><a href="#questions">Вопросы</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
 
-				</nav>
 				<a href="https://api.whatsapp.com/send?phone=996703578135" class="btn main_btn">Написать в <br>
 					WhatsApp</a>
 			</div>
-
 		</div>
 	</header>
+
 	<section class="main">
 		<div class="container">
 			<div class="wrap flex">
@@ -296,10 +299,24 @@
 
 	<footer>
 		<div class="container">
+			<div class="footer_up index-about__truck_logo animation-truck-car_logo">
+				<a href="index.html" class="footer_logo flex ">
+					<marquee behavior="scroll" direction="right" scrollamount="10">
+						<img src="./img/icons/footer_logo.svg" width="120" height="80" alt="Natural" />
+>
+					</marquee>
+				</a>
+			</div>
+
+			<div class="footer_icons flex">
+				<i class="footer_ic"></i>
+				<i class="footer_ic"></i>
+				<i class="footer_ic"></i>
+
+			</div>
 
 		</div>
 	</footer>
-
 
 	<script src="js/core.js"></script>
 

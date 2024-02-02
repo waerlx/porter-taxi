@@ -20,4 +20,5 @@ const images = document.querySelectorAll('.main_img');
 
 
 window.addEventListener('scroll', () => {
-    images.style.right = "-" + (window.scrollX / 1.5)+ "px";})
+    images.style.right = "-" + (window.scrollX / 1.5) + "px";
+})
