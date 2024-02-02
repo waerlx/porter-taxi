@@ -63,6 +63,7 @@
 	.costumer_card{
 		max-width: 230px;
 	}
+	
 }
 @media screen and (max-width: 780px) {
 	.container{
@@ -94,6 +95,24 @@
 @media screen and (max-width: 540px) {
 	.container{
 		max-width: 420px;
+	}
+
+	.advan_cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.advan_card {
+		margin-bottom: 30px;
+	}
+
+	.advan_ic {
+		max-width: 160px;
+		height: 160px;
+	}
+
+	.advan_text {
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 450px) {
