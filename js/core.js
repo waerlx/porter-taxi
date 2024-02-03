@@ -19,7 +19,11 @@
 const images = document.querySelectorAll('.main_img');
 
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
+window.addEventListener('scroll', () => {
+    images.style.right = "-" + (window.scrollX / 1.5) + "px";
+})
+
+const smoothLinks = document.querySelectorAll('li>a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         e.preventDefault();
