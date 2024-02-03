@@ -530,8 +530,9 @@ li a:focus:after {
 
 .plus_card_port {
 	/* width: calc((100% - 72px) / 2); */
-	padding-left: 450px;
-	padding: 40px 34px 32px;
+	max-width: 450px;
+	/* padding-left: 450px; */
+	padding: 30px 35px;
 	border: 0px solid rgb(0, 0, 0);
 	background-color: rgb(255, 201, 23);
 	border-radius: 25px;
@@ -774,6 +775,7 @@ li a:focus:after {
 	display: inline-block;
 	/* Строчно-блочный элемент */
 	overflow: hidden;
+	margin-bottom: 20px;
 	/* Скрываем всё за контуром */
 }
 
@@ -782,11 +784,6 @@ li a:focus:after {
 	/* Время эффекта */
 	display: block;
 	/* Убираем небольшой отступ снизу */
-}
-
-.advan_card i:hover {
-	transform: scale(1.2);
-	/* Увеличиваем масштаб */
 }
 .advan_card:hover{
 	box-shadow: rgb(255, 170, 0);

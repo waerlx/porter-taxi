@@ -96,6 +96,9 @@
 	.services_cards{
 		justify-content: center;
 	}
+	.plus_card_port{
+		padding: 20px ;
+	}
 }
 @media screen and (max-width: 540px) {
 	.container{
@@ -117,7 +120,7 @@
 	}
 
 	.advan_text {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.plus_left img {
 		width: 350px;
@@ -132,6 +135,14 @@
 	/* .plus_card_txt{
 
 	} */
+	.plus_card_port{
+		max-width: 230px;
+		font-size: 12px;
+	}
+	.advan_ic {
+		max-width: 100px;
+		height: 100px;
+	}
 }
 @media screen and (max-width: 450px) {
 	.container{
@@ -141,5 +152,6 @@
 		flex: 0; 
 		padding: 0;
 	}
+
 
 }
