@@ -34,7 +34,8 @@
 		font-size: 12px;
 	}
 	.plus_left img{
-		max-width: 430px;
+		width: 430px;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
@@ -54,6 +55,9 @@
 	}
 	.wrap{
 		justify-content: center;
+	}
+	.header_btn{
+		display: none;
 	}
 
 }
@@ -115,9 +119,27 @@
 	.advan_text {
 		font-size: 18px;
 	}
+	.plus_left img {
+		width: 350px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.plus_left {
+		flex: 0; 
+		padding: 0;
+	}
+	/* .plus_card_txt{
+
+	} */
 }
 @media screen and (max-width: 450px) {
 	.container{
 		max-width: 100%;
 	}
+	.plus_left {
+		flex: 0; 
+		padding: 0;
+	}
+
 }

@@ -160,139 +160,71 @@ section {
 /* burger */
 
 .menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.menu>li {
+	margin: 0 1rem;
+	overflow: hidden;
 }
 
 .menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #menu-toggle {
-  display: none;
+	display: none;
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-  display: block;
-  background-color: #000000;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+	display: block;
+	background-color: #000000;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
 }
 
 .menu-button::before {
-  content: '';
-  margin-top: -8px;
+	content: '';
+	margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
-  margin-top: 8px;
+	content: '';
+	margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: #f1c513;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 1100px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .header_btn{
-	display: none;
-  }
-
-  
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 61px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #f1c513;
-    height: 2.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0.5em;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #f1c513;
-  }
-
-.menu li a {
-	color: #f1c513;
-  }
-}
-
-/* header */
-header {
+#menu-toggle:checked+.menu-button-container .menu-button {
 	background: #f1c513;
-	border-bottom: 0.5px solid #000;
 }
 
-.head {
-	/* padding: 20px 0; */
-	align-items: center;
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
 }
 
-.head_logo img {
-	max-width: 150px;
-	max-height: 100px;
-}
-.top-nav{
-	
-}
 .menu li a {
 	position: relative;
-	color: #000;
+	color: #000000;
 	/*задаём цвет ссылки*/
 	cursor: pointer;
 	line-height: 1;
@@ -318,11 +250,106 @@ li a:after {
 	/*задаём время анимации*/
 }
 
+@media (max-width: 1100px) {
+	.menu-button-container {
+		display: flex;
+	}
+
+	.header_btn {
+		display: none;
+	}
+
+
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 61px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle~.menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked~.menu li {
+		border: 1px solid #f1c513;
+		height: 2.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+	}
+
+	.menu>li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0.5em;
+		width: 100%;
+		color: white;
+		background-color: #222;
+	}
+
+	.menu>li:not(:last-child) {
+		border-bottom: 1px solid #f1c513;
+	}
+
+	.menu li a {
+		color: #f1c513;
+	}
+
+	.menu li a {
+		position: relative;
+		color: #f1c513;
+		/*задаём цвет ссылки*/
+		cursor: pointer;
+		line-height: 1;
+		/*задаём высоту строки*/
+		text-decoration: none;
+		/*убираем подчёркивание*/
+
+	}
+
+	li a:after {
+		background-color: #f1c513;
+		height: 1.5px;
+	}
+}
+
+/* header */
+header {
+	background: #f1c513;
+	border-bottom: 0.5px solid #000;
+}
+
+.head {
+	/* padding: 20px 0; */
+	align-items: center;
+}
+
+.head_logo img {
+	max-width: 150px;
+	max-height: 100px;
+}
+
+.top-nav {}
+
+
+
+
+
 li a:hover:after,
 li a:focus:after {
 	width: 100%;
 	/*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
+
 /* main  */
 .sec_tit {
 	/* padding: 80px 0 15px 0px; */
@@ -350,7 +377,7 @@ li a:focus:after {
 
 .menu a {
 	padding: 4px 16px;
-	margin-right: 8px;
+	padding: 8px;
 	color: #2c2f24;
 	font-size: 16px;
 	font-weight: 500;
@@ -462,7 +489,7 @@ li a:focus:after {
 	border-radius: 30px;
 	transition: 0.5s;
 	box-shadow: 10px 20px 20px 10px rgba(232, 172, 6, 0.2);
-	margin-right: 150px;
+	/* margin-right: 150px; */
 	text-align: center;
 	margin-top: 150px;
 	line-height: 24px;
@@ -477,7 +504,6 @@ li a:focus:after {
 	font-size: 25px;
 	font-weight: 400;
 	padding-bottom: 12px;
-	font-family: 'Ping';
 }
 
 .plus_wrap {
@@ -490,11 +516,20 @@ li a:focus:after {
 
 .plus_left {
 	flex: 40%;
-	margin-right: 50px;
+	padding-right: 50px;
+}
+
+.plus_tit {
+	font-family: "DM Sans", arial;
+}
+.plus_txt{
+	font-family: "Jost", weight;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .plus_card_port {
-	width: calc((100% - 72px) / 2);
+	/* width: calc((100% - 72px) / 2); */
 	padding-left: 450px;
 	padding: 40px 34px 32px;
 	border: 0px solid rgb(0, 0, 0);
@@ -735,6 +770,25 @@ li a:focus:after {
 	max-width: 180px;
 }
 
+.advan_card {
+	display: inline-block;
+	/* Строчно-блочный элемент */
+	overflow: hidden;
+	/* Скрываем всё за контуром */
+}
+
+.advan_card i {
+	transition: 0.8s;
+	/* Время эффекта */
+	display: block;
+	/* Убираем небольшой отступ снизу */
+}
+
+.advan_card i:hover {
+	transform: scale(1.2);
+	/* Увеличиваем масштаб */
+}
+
 /* services */
 .services_card {
 	max-width: 415px;
@@ -745,18 +799,6 @@ li a:focus:after {
 	position: relative;
 
 }
-
-/* .image-filter{
-	height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-	background-color: #000000;
-    opacity: 0.3;
-	/* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
-
-
 
 .ser_txt {
 	text-align: center;
@@ -773,14 +815,40 @@ li a:focus:after {
 	display: block;
 	width: 100%;
 	height: auto;
-	transition: .5s ease;
+	transition: .9s ease;
 	backface-visibility: hidden;
 	cursor: pointer;
+	filter: brightness(50%)
 }
 
-.middle {
+.image:hover {
+	filter: brightness(100%)
+}
+
+.ser_img_hover {
+	display: inline-block;
+	/* Строчно-блочный элемент */
+	overflow: hidden;
+	/* Скрываем всё за контуром */
+}
+
+.ser_img_hover img {
+	transition: 1s;
+	/* Время эффекта */
+	display: block;
+	/* Убираем небольшой отступ снизу */
+}
+
+.ser_img_hover img:hover {
+	transform: scale(1.2);
+	/* Увеличиваем масштаб */
+}
+
+/* .middle {
+
 	transition: .5s ease;
-	opacity: 0;
+	color: #000;
+	opacity: 1;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -794,8 +862,10 @@ li a:focus:after {
 }
 
 .ser_img_hover:hover .middle {
-	opacity: 1;
-}
+	opacity: 0;
+} */
+
+
 /* footer */
 footer {
 	background: #3b3b3b;
@@ -817,37 +887,67 @@ footer {
 .footer_logo img {
 	max-width: 125px;
 	max-height: 125px;
+
+}
+
+/* .footer_icons{
+	padding-bottom: 30px;
+	max-width: 400px;
 	
-}
-
-/* .footer_ic{
-background: url(../img/icons/footer_call.png);
-width: 50%;
-background: #fdc10b;
-}
-.footer_ic{
-background: url(./img/icons/footer_sms.png);
-
-}
-.footer_ic{
-background: url(/img/icons/footer_tg.png);
 } */
+.footer_icons {
+	padding-bottom: 30px;
+	justify-content: center;
+	gap: 30px;
+}
+
 .footer_ic {
-	width: 150px;
-	height: 150px;
+	width: 40px;
+	height: 40px;
 	color: #000;
 	border-radius: 50%;
 	display: block;
-	background-image: url(../img/icons/footer_call.SVG);
+	border-radius: 10px;
+	background-color: #f1c513;
+	transition: 1s;
+}
+
+.footer_first_ic {
+	background-image: url(../img/icons/footer_call.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.footer_ic :nth-child(2) {
-	background: url(./img/icons/footer_sms.png);
+.footer_second_ic {
+	background-image: url(../img/icons/footer_tg.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.footer_ic :nth-child(3) {
-	background: url(./img/icons/footer_sms.png);
+.footer_third_ic {
+	background-image: url(../img/icons/footer_insta.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer_ic:hover {
+	background-color: #000;
+}
+
+.footer_second_ic:hover {
+	background-image: url(../img/icons/footer_tg-yellow.svg);
+}
+
+.footer_first_ic:hover {
+	background-image: url(../img/icons/footer_call-yellow.svg);
+}
+
+.footer_third_ic:hover {
+	background-image: url(../img/icons/footer_insta-yellow.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
 }

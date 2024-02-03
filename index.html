@@ -5,10 +5,13 @@
 	<meta charset="UTF-8">
 	<title>Porter Taxi</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../porter taxi/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../porter taxi/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../porter taxi/img/favicon/favicon-16x16.png">
+
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +46,8 @@
 					<li><a href="">Контакты</a></li>
 				</ul>
 
-				<a href="https://api.whatsapp.com/send?phone=996703578135" class="btn main_btn header_btn">Написать в <br>
+				<a href="https://api.whatsapp.com/send?phone=996703578135" class="btn main_btn header_btn">Написать в
+					<br>
 					WhatsApp</a>
 			</div>
 		</div>
@@ -88,14 +92,15 @@
 
 							<div class="plus_card_txt">
 								<p class="plus_txt"><b>Портер</b>
-								<ul>
+
+								</p>
+								<ul class="plus_txt">
 									<li>Грузоподъемность: до 1000 кг</li>
 									<li>Объем кузова: до 5 м³</li>
 									<li>Минимальный заказ: 1538 ₽</li>
 									<li>Доп. точка: 567 ₽</li>
 									<li>Выезд в область: 32 ₽ / км</li>
 								</ul>
-								</p>
 
 							</div>
 						</div>
@@ -299,19 +304,29 @@
 
 	<footer>
 		<div class="container">
-			<div class="footer_up index-about__truck_logo animation-truck-car_logo">
-				<a href="index.html" class="footer_logo flex ">
-					<marquee behavior="scroll" direction="right" scrollamount="10">
-						<img src="./img/icons/footer_logo.svg" width="120" height="80" alt="Natural" />
-					</marquee>
-				</a>
-			</div>
+			<div class="footer_wrap">
+				<div class="footer_up index-about__truck_logo animation-truck-car_logo">
+					<a href="index.html" class="footer_logo flex ">
+						<marquee behavior="scroll" direction="right" scrollamount="10">
+							<img src="./img/icons/footer_logo.svg" width="120" height="80" alt="Natural" />
+						</marquee>
+					</a>
+				</div>
 
-			<div class="footer_icons flex">
-				<i class="footer_ic"></i>
-				<i class="footer_ic"></i>
-				<i class="footer_ic"></i>
-
+				<!-- <div class="footer_icons flex"> -->
+				<ul class="footer_icons flex">
+					<a href="" class="footer_link">
+						<i class="footer_ic footer_first_ic"></i>
+					</a>
+					<a href="" class="footer_link">
+						<i class="footer_ic footer_second_ic"></i>
+					</a>
+					<a href="" class="footer_link">
+						<i class="footer_ic footer_third_ic"></i>
+					</a>
+				</ul>
+				<!-- 
+				</div> -->
 			</div>
 
 		</div>
