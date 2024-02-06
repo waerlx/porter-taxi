@@ -952,3 +952,57 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+/* gallery */
+.slider-container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+  .slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap;
+  
+  }
+  
+  .slide img {
+  width: 400px;
+  border-radius: 20px;
+  margin-right: 20px;
+  flex: 0 0 300px;
+  }
+  
+  button {
+	cursor: pointer;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border: none;
+	font-size: 80px;
+	color: rgb(239, 185, 68);
+	transform: translateY(-380%);
+	display: flex;
+	justify-content: space-between;
+  }
+  button:hover{
+	color: #6d4301 ;
+  }
+  
+  #prev {
+	left: 100px;
+	font-size: 60px;
+  
+  }
+  
+  #next {
+	right: 100px;
+	font-size: 60px;
+  
+  }
+  
+  .btns {
+	display: flex;
+	justify-content: space-between;
+  }
