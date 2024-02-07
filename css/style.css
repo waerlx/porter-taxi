@@ -508,6 +508,7 @@ li a:focus:after {
 
 .plus_wrap {
 	justify-content: center;
+	align-items: center;
 }
 
 .plus_right {
