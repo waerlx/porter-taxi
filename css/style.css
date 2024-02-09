@@ -255,6 +255,9 @@ li a:after {
 	transition: width 0.3s ease-out;
 	/*задаём время анимации*/
 }
+.mobile_btn{
+	display: none;
+}
 
 @media (max-width: 1100px) {
 	.menu-button-container {
@@ -325,6 +328,9 @@ li a:after {
 	li a:after {
 		background-color: #f1c513;
 		height: 1.5px;
+	}
+	.mobile_btn{
+		display: block;
 	}
 }
 
@@ -398,7 +404,7 @@ li a:focus:after {
 	text-align: center;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 20px;
 	/* padding: 12px 24px; */
 	max-height: 55px;
 	background: none;

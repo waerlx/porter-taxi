@@ -57,8 +57,14 @@
 		justify-content: center;
 	}
 	.header_btn{
-		display: none;
+		display: block;
 	}
+	@media (max-width: 1100px) {
+		.header_btn {
+			display: none;
+		}
+	}
+	
 
 }
 @media screen and (max-width: 990px) {
@@ -68,7 +74,7 @@
 	.costumer_card{
 		max-width: 230px;
 	}
-
+	
 }
 @media screen and (max-width: 780px) {
 	.container{
@@ -151,6 +157,12 @@
 		color: rgb(0, 0, 0);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+	}
+	.main_btn {
+		font-size: 8px;
+		line-height: 15px;
+		max-height: 35px;
+		max-width: 100px;
 	}
 }
 @media screen and (max-width: 450px) {
