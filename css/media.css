@@ -161,6 +161,9 @@
 		flex: 0; 
 		padding: 0;
 	}
+	.plus-wrap{
+		font-size: 15px;
+	}
 
 .slick-prev:before{
 	display: none;
