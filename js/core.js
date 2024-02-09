@@ -1,3 +1,4 @@
+
 // {/* <script>
 // // Get the video
 // var video = document.getElementById("myVideo");
@@ -36,28 +37,57 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
-let currentIndex = 0;
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
+// let currentIndex = 0;
+//   const slides = document.querySelectorAll('.slide');
+//   const totalSlides = slides.length;
 
 
-  function showSlide(index) {
-    if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-      currentIndex = 0;
-    } else {
-      currentIndex = index;
-    }
+//   function showSlide(index) {
+//     if (index < 0) {
+//       currentIndex = totalSlides - 1;
+//     } else if (index >= totalSlides) {
+//       currentIndex = 0;
+//     } else {
+//       currentIndex = index;
+//     }
 
-    const transformValue = -currentIndex * 30 + '%';
-    document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
-  }
+//     const transformValue = -currentIndex * 30 + '%';
+//     document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
+//   }
 
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
+//   function prevSlide() {
+//     showSlide(currentIndex - 1);
+//   }
 
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
+//   function nextSlide() {
+//     showSlide(currentIndex + 1);
+//   }
+
+// $(window).resize(function() {
+//     var window_width = $(window).width();
+//     if (window_width < 600) {
+//         $('.your-class').slick({
+//             dots: true,
+//             slidesToShow:1,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,
+//         });
+//     } else {
+//         $('.your-class').slick({
+//             dots: true,
+//             slidesToShow:2,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,
+//         });
+//     };
+//   });
+
+$('.your-class').slick({
+    dots: true,
+    slidesToShow:3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});

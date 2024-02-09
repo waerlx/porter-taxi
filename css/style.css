@@ -165,11 +165,17 @@ section {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+
+}
+
+.menu>li:hover {
+	transform: scale(1.2);
 }
 
 .menu>li {
 	margin: 0 1rem;
 	overflow: hidden;
+	transition: .3s;
 }
 
 .menu-button-container {
@@ -337,9 +343,6 @@ header {
 	max-width: 150px;
 	max-height: 100px;
 }
-
-.top-nav {}
-
 
 
 
@@ -515,7 +518,7 @@ li a:focus:after {
 	flex: 50%;
 }
 
-.plus_left {
+.plus_left img {
 	flex: 40%;
 	padding-right: 50px;
 }
@@ -523,7 +526,8 @@ li a:focus:after {
 .plus_tit {
 	font-family: "DM Sans", arial;
 }
-.plus_txt{
+
+.plus_txt {
 	font-family: "Jost", weight;
 	font-size: 18px;
 	font-weight: 400;
@@ -540,13 +544,23 @@ li a:focus:after {
 	transition: 0.5s;
 	margin: 0 auto;
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 .plus_card_port:hover {
 	transform: scale(1.1);
 }
+.plus-wrap{
+justify-content: center;
 
+}
+.given{
+	text-align: end;
+}
+
+.plus_number{
+	padding-left: 5px;
+	text-align: start;
+}
 /* costumer  */
 .costumers {
 	background: #f9f9f7;
@@ -554,6 +568,22 @@ li a:focus:after {
 
 .costumer_card__1 .costumer_ic {
 	background-image: url(../img/icons/costumer_ic_1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.costumer_card__2 .costumer_ic {
+	background-image: url(../img/icons/costumer_ic_2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.costumer_card__3 .costumer_ic {
+	background-image: url(../img/icons/costumer_ic_3.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -786,10 +816,11 @@ li a:focus:after {
 	display: block;
 	/* Убираем небольшой отступ снизу */
 }
-.advan_card:hover{
+
+.advan_card:hover {
 	box-shadow: rgb(255, 170, 0);
 	transform: scale(1.2);
-	}
+}
 
 /* services */
 .services_card {
@@ -896,11 +927,12 @@ footer {
 	padding-bottom: 30px;
 	max-width: 400px;
 	
-} */
+  } */
 .footer_icons {
 	padding-bottom: 30px;
 	justify-content: center;
 	gap: 30px;
+
 }
 
 .footer_ic {
@@ -911,8 +943,9 @@ footer {
 	display: block;
 	border-radius: 10px;
 	background-color: #f1c513;
-	transition: 1s;
+	transition: 0.5s;
 }
+
 
 .footer_first_ic {
 	background-image: url(../img/icons/footer_call.svg);
@@ -929,11 +962,20 @@ footer {
 }
 
 .footer_third_ic {
-	background-image: url(../img/icons/footer_insta.svg);
-	background-size: 30px;
+	background-image: url(../img/icons/footer_instagram.svg);
+	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.footer_four_ic {
+	background: url(/img/icons/footer_whatsapp.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f1c513;
+}
+
 
 .footer_ic:hover {
 	background-color: #000;
@@ -941,69 +983,47 @@ footer {
 
 .footer_second_ic:hover {
 	background-image: url(../img/icons/footer_tg-yellow.svg);
+	background-size: 22px;
 }
 
 .footer_first_ic:hover {
 	background-image: url(../img/icons/footer_call-yellow.svg);
+	background-size: 25px;
 }
 
 .footer_third_ic:hover {
 	background-image: url(../img/icons/footer_insta-yellow.svg);
-	background-size: 30px;
+	background-size: 25px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.footer_four_ic:hover {
+	background: url(../img/icons/footer_what-yellow.svg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+}
+
 /* gallery */
-.slider-container {
-	width: 80%;
-	margin: auto;
-	overflow: hidden;
-  }
-  
-  .slider {
+
+.slider {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
-  flex-wrap: nowrap;
-  
-  }
-  
-  .slide img {
-  width: 400px;
-  border-radius: 20px;
-  margin-right: 20px;
-  flex: 0 0 300px;
-  }
-  
-  button {
-	cursor: pointer;
-	top: 50%;
-	width: 50px;
-	height: 50px;
-	background: transparent;
-	border: none;
-	font-size: 80px;
-	color: rgb(239, 185, 68);
-	transform: translateY(-380%);
-	display: flex;
-	justify-content: space-between;
-  }
-  button:hover{
-	color: #6d4301 ;
-  }
-  
-  #prev {
-	left: 100px;
-	font-size: 60px;
-  
-  }
-  
-  #next {
-	right: 100px;
-	font-size: 60px;
-  
-  }
-  
-  .btns {
-	display: flex;
-	justify-content: space-between;
-  }
+	flex-wrap: nowrap;
+
+}
+.slide{
+	padding-right: 20px;
+}
+.slide img {
+	/* width: 400px; */
+	/* border-radius: 20px;
+	padding-right: 20px; */
+	flex: 0 0 300px;
+}
+
+.ser_img {
+	align-items: center;
+}

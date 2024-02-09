@@ -143,6 +143,15 @@
 		max-width: 100px;
 		height: 100px;
 	}
+	.slick-prev:before, .slick-next:before {
+		font-family: 'slick';
+		font-size: 20px;
+		line-height: 1;
+		opacity: .75;
+		color: rgb(0, 0, 0);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 @media screen and (max-width: 450px) {
 	.container{
@@ -153,5 +162,10 @@
 		padding: 0;
 	}
 
-
+.slick-prev:before{
+	display: none;
+}
+.slick-next:before{
+	display: none;
+}
 }
